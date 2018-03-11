@@ -1,0 +1,9 @@
+#!/bin/bash 
+
+
+./1-install-docker
+./2-config-docker
+./3-prepare-rancher-docker-compose
+./4-start-rancher
+
+echo "阅读Readme, 了解Rancher的运维技能" 
