@@ -7,3 +7,5 @@
 
 echo "阅读Readme, 了解Rancher的运维技能" 
 echo "运行 docker-compose up -d 启动 Rancher" 
+
+# sudo docker run -d --restart=unless-stopped -v /root/mysql:/var/lib/mysql -p 8080:8080 rancher/server:stable
