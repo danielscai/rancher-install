@@ -1,3 +1,13 @@
 #!/bin/bash 
 
 yum install -y docker  docker-compose 
+
+cat > /etc/docker/daemon.json  <<EOF
+{
+    "registry-mirrors": ["https://ar69mv7u.mirror.aliyuncs.com"]
+}
+EOF
+
+
+systemctl enable docker.service
+systemctl restart docker
