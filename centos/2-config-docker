@@ -2,7 +2,9 @@
 
 cat > /etc/docker/daemon.json  <<EOF 
 {
-    "registry-mirrors": ["https://ar69mv7u.mirror.aliyuncs.com"],
-    "storage-driver": "overlay2"
+    "registry-mirrors": ["https://ar69mv7u.mirror.aliyuncs.com"]
 }
 EOF
+
+
+systemctl restart docker 
