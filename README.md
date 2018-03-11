@@ -22,3 +22,7 @@ systemctl restart docker
 
 运行如下命令
 `sudo docker run -d --restart=unless-stopped -v /root/mysql:/var/lib/mysql -p 80:8080 rancher/server:stable`
+
+### 将新节点加入到 Rancher集群中
+
+到 Rancher 界面中, 选择 "基础架构" -> "主机" , 点击"添加主机" 
