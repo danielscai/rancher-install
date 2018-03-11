@@ -7,4 +7,5 @@ cat > /etc/docker/daemon.json  <<EOF
 EOF
 
 
+systemctl enable docker.service
 systemctl restart docker 
