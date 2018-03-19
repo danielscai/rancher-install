@@ -26,3 +26,12 @@ systemctl restart docker
 ### 将新节点加入到 Rancher集群中
 
 到 Rancher 界面中, 选择 "基础架构" -> "主机" , 点击"添加主机" 
+
+
+### ssh 卡顿问题解决
+
+```
+echo "ClientAliveInterval 60" >> /etc/ssh/sshd_config
+echo "ClientAliveCountMax 3" >> /etc/ssh/sshd_config 
+systemctl restart sshd
+```
