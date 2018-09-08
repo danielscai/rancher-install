@@ -21,7 +21,7 @@ systemctl restart docker
 ### 安装Rancher 服务器
 
 运行如下命令
-`sudo docker run -d --restart=unless-stopped -v /root/mysql:/var/lib/mysql -p 80:8080 rancher/server:stable`
+`sudo docker run -d --restart=unless-stopped -v /data/rancher-mysql:/var/lib/mysql -p 8080:8080 rancher/server:stable`
 
 ### 将新节点加入到 Rancher集群中
 
