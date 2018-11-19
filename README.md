@@ -41,5 +41,5 @@ systemctl restart sshd
 ``` 
 
 frontend 80
-  redirect scheme https if { hdr(Host) -i qa.fistec.cn }
+  redirect scheme https if { hdr(Host) -i www.example.com }
 ``` 
