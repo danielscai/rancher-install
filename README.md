@@ -35,3 +35,11 @@ echo "ClientAliveInterval 60" >> /etc/ssh/sshd_config
 echo "ClientAliveCountMax 3" >> /etc/ssh/sshd_config 
 systemctl restart sshd
 ```
+
+
+### rancher 80 转 443 
+``` 
+
+frontend 80
+  redirect scheme https if { hdr(Host) -i qa.fistec.cn }
+``` 
