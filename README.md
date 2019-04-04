@@ -8,7 +8,7 @@ yum install -y docker  docker-compose
 
 cat > /etc/docker/daemon.json  <<EOF
 {
-  "registry-mirrors": ["https://mirror.ccs.tencentyun.com"]
+  "registry-mirrors": ["https://reg-mirror.qiniu.com"]
 }
 EOF
 
